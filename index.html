@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      survey-form.freecodecamp.rocks
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title" class="bold">freeCodeCamp Survey Form</h1>
+    <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+    <form id="survey-form">
+      <div><label id="name-label" for="name">Name <input type="name" id="name" required placeholder="Enter your name" /></label></div>
+      <div><label id="email-label" for="email">Email <input type="email" id="email" required placeholder="Enter your email" /></label></div>
+      <div><label id="number-label" for="number"> Age (optional) <input type="number" id="number" min="10" max="99" placeholder="Age" /></label></div>
+      <div><label for="dropdown">Which option best describes your current role?
+        <select id="dropdown">
+          <option>Select current role </option>
+          <option>Student </option>
+          <option>Full-time job </option>
+        </select>
+      </label></div>
+      <fieldset>
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <label for="yes"><input id="yes" type="radio" value="y" name="recommend" /> Definitely</label>
+        <label for="maybe"><input id="maybe" type="radio" value="y-n" name="recommend" /> Maybe</label>
+        <label for="not-sure"><input id="not-sure" type="radio" value="n" name="recommend" /> Not sure</label>
+      </fieldset>
+      <fieldset>
+        <legend>What would you like to see improved? (Check all that apply)</legend>
+        <label><input type="checkbox" value="front" /> Front-end Projects</label>
+        <label><input type="checkbox" value="back" /> Back-end Projects</label>
+        <label><input type="checkbox" value="visual" /> Data Visualization</label>
+      </fieldset>
+      <label>Any comments or suggestions?
+        <textarea placeholder="Enter your comment here"></textarea>
+      </label>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+    
+  </body>
